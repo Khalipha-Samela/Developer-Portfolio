@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khalipha - Portfolio</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="site">
+        <nav class="wrap">
+            <a href="#top" class="brand"><span class="chip"><span></span><span></span><span></span></span>khalipha</a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-btn" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </label>
+            <div class="navlinks">
+                <a href="#about">About</a>
+                <a href="#work">Projects</a>
+                <a href="#stack">Stack</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="wrap" id="top">
+
+        <section class="hero">
+            <p class="eyebrow">Junior Full Stack Developer</p>
+            <h1 class="headline">From interface to database, I <span class="grad">build the whole thing</span>.</h1>
+            <p class="sub">I'm an early-career developer turning ideas into real, end-to-end applications. Connecting the dots from user interaction to data persistence.</p>
+            <div class="hero-ctas">
+                <a href="assets/cv/Khalipha Samela_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn primary"><i class="fa-solid fa-download"></i>Download CV</a>
+                <a href="#work" class="btn ghost">View My Work</a>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://github.com/Khalipha-Samela" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/khalipha-samela/" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:samelakhalipha@gmail.com" class="icon-btn" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+
+            <div class="stack-diagram" aria-hidden="true">
+                <p class="diagram-head">request lifecycle</p>
+                <div class="stack-rows">
+                    <div class="stack-rail"></div>
+                    <div class="pulse"></div>
+                    <div class="stack-row client">
+                        <span class="layer-label">Client</span>
+                        <span class="layer-desc"><b>React + Tailwind</b> renders the view, sends the request</span>
+                    </div>
+                    <div class="stack-row server">
+                        <span class="layer-label">Server</span>
+                        <span class="layer-desc"><b>Node.js + Express</b> processes the request, interacts with the database</span>
+                    </div>
+                    <div class="stack-row data">
+                        <span class="layer-label">Data</span>
+                        <span class="layer-desc"><b>PostgreSQL</b> stores and retrieves the data</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="section-head">
+                <h2 class="section-title">About</h2>
+                <span class="section-note">Get to know me better</span>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text">
+                <p>I'm a Systems Development graduate who enjoys turning ideas into something people can actually use. I'm passionate about technology, creative problem-solving, and building digital experiences that bring ideas to life. I'm always learning, experimenting, and looking for the next problem worth solving.</p>
+                </div>
+                <div class="about-facts">
+                    <div class="fact-row"><span class="fact-label">Based in</span><span class="fact-value">Johannesburg, Gauteng</span></div>
+                    <div class="fact-row"><span class="fact-label">Focus</span><span class="fact-value">Full-stack web development</span></div>
+                    <div class="fact-row"><span class="fact-label">Currently learning</span><span class="fact-value">node.js and cybersecurity</span></div>
+                    <div class="fact-row"><span class="fact-label">Open to</span><span class="fact-value">Junior developer, Internships, Graduate positions and cybersecurity intern</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="work">
+            <div class="section-head">
+                <h2 class="section-title">Selected work</h2>
+                <span class="section-note" id="work-count">// client → server → data</span>
+            </div>
+
+            <div class="projects-visible" id="projects-visible"></div>
+
+            <div class="projects-more" id="projects-more" hidden></div>
+
+            <div class="see-more-wrap">
+                <button type="button" class="btn ghost" id="see-more-btn" aria-expanded="false" aria-controls="projects-more">See more projects →</button>
+            </div>
+
+        </section>
+        
+        <section class="section" id="stack">
+            <div class="section-head">
+                <h2 class="section-title">Stack</h2>
+                <span class="section-note">by layer</span>
+            </div>
+
+            <div class="cols">
+                <div class="col client">
+                    <p class="col-label">Client</p>
+                    <ul>
+                        <li>HTML / CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Tailwind CSS</li>
+                    </ul>
+                </div>
+                <div class="col server">
+                    <p class="col-label">Server</p>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>PHP</li>
+                        <li>Supabase</li>
+                    </ul>
+                </div>
+                <div class="col data">
+                    <p class="col-label">Data</p>
+                    <ul>
+                        <li>PostgreSQL</li>
+                        <li>MySQL</li>
+                        <li>Schema design</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="education">
+            <div class="section-head">
+                <h2 class="section-title">Education</h2>
+                <span class="section-note">Academic background and qualifications</span>
+            </div>
+
+            <div class="edu-list">
+                <div class="edu-item">
+                    <div class="edu-main">
+                        <p class="edu-degree">Diploma in Systems Development</p>
+                        <p class="edu-school">Boston City Campus</p>
+                    </div>
+                    <span class="edu-date">2023 - 2025</span>
+                </div>
+                <div class="edu-item">
+                    <div class="edu-main">
+                        <p class="edu-degree">National Senior Certificate</p>
+                        <p class="edu-school">National School of the Arts</p>
+                    </div>
+                    <span class="edu-date">2018 - 2021</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="certifications">
+            <div class="section-head">
+                <h2 class="section-title">Certifications</h2>
+                <span class="section-note">Achievements and credentials</span>
+            </div>
+
+            <div class="cert-table" id="cert-table" role="table" aria-label="Certifications">
+                <div class="cert-row cert-row-head" role="row">
+                    <span role="columnheader">Credential</span>
+                    <span role="columnheader">Issuer</span>
+                    <span role="columnheader">Issued</span>
+                    <span role="columnheader">Certificate</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="contact-wrap">
+                <div class="contact-intro">
+                    <p class="contact-eyebrow">// contact</p>
+                    <h2 class="contact-heading">Let's work together</h2>
+                    <p class="contact-sub">Looking for a junior dev who can pick up the whole stack? I'd love to hear from you!</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Left Side: Contact Info Cards -->
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <span class="info-icon"><i class="fa-solid fa-envelope"></i></span>
+                            <div>
+                                <p class="info-label">Email</p>
+                                <p class="info-value">samelakhalipha@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <span class="info-icon"><i class="fa-solid fa-phone"></i></span>
+                            <div>
+                                <p class="info-label">Phone</p>
+                                <p class="info-value">+27 74 916 1348</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <span class="info-icon"><i class="fa-solid fa-location-dot"></i></span>
+                            <div>
+                                <p class="info-label">Location</p>
+                                <p class="info-value">Johannesburg, Gauteng</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Form Panel -->
+                    <div class="contact-form-panel">
+                        <p class="form-panel-title">Send me a message</p>
+                        <form id="contact-form" class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+                            <!-- Required by Netlify Forms -->
+                            <input type="hidden" name="form-name" value="contact">
+
+                            <!-- Honeypot: hidden from real users, catches bots -->
+                            <p hidden>
+                                <label>Don’t fill this out: <input name="bot-field" tabindex="-1"></label>
+                            </p>
+
+                            <div class="form-grid-2">
+                                <div class="form-row">
+                                    <input type="text" name="name" id="cf-name" placeholder="Your Name" autocomplete="name" required>
+                                </div>
+                                <div class="form-row">
+                                    <input type="email" name="email" id="cf-email" placeholder="Your Email" autocomplete="email" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <input type="text" name="subject" id="cf-subject" placeholder="Subject" required>
+                            </div>
+                            <div class="form-row">
+                                <textarea name="message" id="cf-message" placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn primary form-submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+                            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="wrap">
+        <h3 class="footer-title">Khalipha Samela</h3>
+        <p class="footer-description">Junior Full Stack Developer | Cybersecurity Enthusiast</p>
+        <span class="footer-copyright">&copy; 2026 Khalipha Samela. All rights reserved.</span>
+    </footer>
+
+    <div id="project-modal" class="modal" aria-hidden="true">
+        <div class="modal-overlay"></div>
+        <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button class="modal-close" aria-label="Close project details">&times;</button>
+            <div class="modal-image" id="modal-image">
+                <img class="modal-image-img" alt="Project Thumbnail" hidden>
+                <span class="modal-image-fallback"><i class="fas fa-diagram-project"></i></span>
+            </div>
+
+            <div class="modal-body">
+                <p class="modal-category"></p>
+                <h3 class="modal-title" id="modal-title"></h3>
+                <p class="modal-desc"></p>
+                <p class="modal-section-label modal-features-label"></p>
+                <ul class="modal-features"></ul>
+                <p class="modal-section-label">Tech stack</p>
+                <div class="modal-tags"></div>
+                <div class="modal-links"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="data/projects.js"></script>
+    <script src="data/certificates.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
