@@ -2,7 +2,7 @@
 
 Personal portfolio site for a junior full-stack developer. It is a static site (HTML, CSS, vanilla JavaScript) with no build step. Projects and certifications are rendered from data files, and the contact form is handled by Netlify Forms.
 
-**Live site:** `https://<your-site-name>.netlify.app`
+**Live site:** `https://khalipha-samela.netlify.app/`
 
 ## Features
 
