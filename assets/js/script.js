@@ -286,3 +286,20 @@ if (contactForm) {
     }
   });
 }
+
+// ---- Warm the cache for modal thumbnails once the page is idle ----
+function preloadThumbnails() {
+  projectsData.forEach(p => {
+    if (p.thumbnail) {
+      const img = new Image();
+      img.src = p.thumbnail;
+    }
+  });
+}
+window.addEventListener('load', () => {
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(preloadThumbnails);
+  } else {
+    setTimeout(preloadThumbnails, 1500);
+  }
+});
